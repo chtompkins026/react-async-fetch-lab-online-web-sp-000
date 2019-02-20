@@ -5,7 +5,7 @@ export default class App extends Component{
     super();
     this.state = {
       spacePeople: []
-    }
+    };
   }
 
   componentDidMount(){
@@ -13,7 +13,7 @@ export default class App extends Component{
     .then(res => res.json())
     .then(data => this.setState({
       spacePeople: data.people
-    }))
+    }));
   }
 
   render(){
