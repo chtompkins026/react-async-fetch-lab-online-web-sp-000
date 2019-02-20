@@ -14,7 +14,7 @@ class App extends Component {
       .then(data => {
         this.setState({
           spacePeople: data.people
-        })
+        }); 
       })
   }
 
