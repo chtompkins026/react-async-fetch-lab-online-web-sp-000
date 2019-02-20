@@ -3,9 +3,9 @@
 import React, { Component } from 'react'
  
 class App extends Component {
- 
-  state = {
-    peopleInSpace: []
+  super(); 
+  this.state = {
+    spacePeople: []
   }
  
   render() {
