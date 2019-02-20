@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.peopleInSpace.map(person => person.name)}
+        {this.state.spacePeople.map(person => person.name)}
       </div>
     )
   }
@@ -21,7 +21,7 @@ class App extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({
-          peopleInSpace: data.people
+          spacePeople: data.people
         })
       })
   }
