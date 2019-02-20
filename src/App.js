@@ -8,14 +8,6 @@ class App extends Component {
     spacePeople: []
   }
  
-  render() {
-    return (
-      <div>
-        {this.state.spacePeople.map(person => person.name)}
-      </div>
-    )
-  }
- 
   componentDidMount() {
     fetch('http://api.open-notify.org/astros.json')
       .then(response => response.json())
@@ -25,6 +17,14 @@ class App extends Component {
         })
       })
   }
-}
+
  
-export default App
+  render() {
+    return (
+      <div>
+        {this.state.spacePeople.map(person => person.name)}
+      </div>
+    )
+  }
+  
+}
