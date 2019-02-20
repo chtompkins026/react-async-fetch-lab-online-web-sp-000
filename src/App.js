@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
  
-class App extends Component {
+export default class App extends Component {
   super(); 
   this.state = {
     spacePeople: []
